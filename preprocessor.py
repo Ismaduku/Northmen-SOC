@@ -1,8 +1,4 @@
-import re
-import ipaddress
-
-
-print("'Northmen' Security Operations Center")
+print("The 'Northmen' Security Operations Center")
 print()
 print("Processing log-in attempts...")
 print()
@@ -30,19 +26,3 @@ with open(log_file, "r") as file:
 
 print("Failed login attempts:", failed_attempts)
 
-
-def parse_log(line):
-    match = re.search(r"\bfrom\s+(\S+)\s+port\s+\d+", line)
-
-    if match is None:
-        return None
-
-    try:
-        source_ip = str(ipaddress.ip_address(match.group(1)))
-    except ValueError:
-        return None
-
-    return {
-        "hostname": "nm-files01",
-        "source_ip": source_ip,
-    }
