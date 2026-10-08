@@ -26,3 +26,4 @@ with open(log_file, "r") as file:
 
 print("Failed login attempts:", failed_attempts)
 
+
