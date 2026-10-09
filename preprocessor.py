@@ -1,3 +1,4 @@
+
 print("The 'Northmen' Security Operations Center")
 print()
 print("Processing log-in attempts...")
@@ -25,5 +26,18 @@ with open(log_file, "r") as file:
 
 
 print("Failed login attempts:", failed_attempts)
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
