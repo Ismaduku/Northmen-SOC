@@ -1,5 +1,5 @@
 
-print("The 'Northmen' Security Operations Center")
+print("The 'NORTHMEN' – Security Operations Center")
 print()
 print("Processing log-in attempts...")
 print()
